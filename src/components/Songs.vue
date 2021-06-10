@@ -9,8 +9,8 @@
             width="650px"
             :src="item.album"
           >
-            <audio :src="item.song" controls></audio>
           </v-img>
+          <audio :src="item.song" controls></audio>
           <div class="overflow_prevent">{{ item.title }}</div>
           <div class="caption overflow_prevent" style="line-height: 100%">
             {{ item.artist }}
@@ -81,5 +81,8 @@ export default {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.layout {
+  justify-content: space-around;
 }
 </style>
